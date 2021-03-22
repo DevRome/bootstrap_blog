@@ -1,0 +1,55 @@
+<h2 class="text-center mt-5">Add New Guitar Player</h2> 
+
+
+
+<div class="container">
+    <form action="/players/new" method="POST"></form>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="coverImage" class="form-label">Image</label>
+                <input type="file" name="coverImage" class="filepond">
+            </div>
+        </div>
+        <div class="col">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Name and Surname">
+                </div>
+            
+                <div class="mb-3">
+                    <label for="nickName" class="form-label">Nick Name</label>
+                    <input type="text" name="nickName" class="form-control" placeholder="Alias">
+                </div>
+            
+                <div class="mb-3">
+                    <label for="bands" class="form-label">Bands</label>
+                    <input type="text" name="bands" class="form-control" placeholder="Bands which palyed with">
+                </div>
+            
+                <div class="container d-flex justify-content-evenly mb-3">
+                    <div class="mb-3">
+                        <label for="dateBorn" class="form-label">Date Born</label>
+                        <input type="date" name="dateBorn" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dateDeath" class="form-label">Date Death *</label>
+                        <input type="date" name="dateDeath" class="form-control">
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" name="country" class="form-control" placeholder="country">
+                </div>
+            
+                
+            
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-primary" value="Create">
+                </div>
+        </div>
+    </div>
+</form>
+</div>

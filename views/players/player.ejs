@@ -1,0 +1,31 @@
+
+<div class="container">
+
+    <div class="row">
+        <h2><%= player.name %></h2>
+    </div>
+
+    <div class="container d-flex justify-content-evenly">
+        <div class="row md-3">
+            <img src="<%= player.coverImagePath %>" alt="">
+        </div>
+        <div class="row md-9">
+            <div class="row">
+                <p>Name: <span><%= player.name %> </span></p>
+            </div>
+            <div class="row">
+                <p>nickname: <span><%= player.nickName %> </span></p>
+            </div>
+            <div class="row">
+                <p>Date born: <span><%= player.dateBorn.toDateString() %> </span></p>
+            </div>
+            <div class="row">
+                <p>Date death: <span><%= player.dateDeath.toDateString() %> </span></p>
+            </div>
+            <div class="row">
+                <p>Country: <span><%= player.country %> </span></p>
+            </div>
+        </div>
+    </div>
+    
+</div>
