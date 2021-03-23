@@ -1,0 +1,17 @@
+<h1 class="text-center mt-5">All Guitar Players</h1>
+
+<div class="container-md d-flex flex-wrap flex-justify-center">
+    <div class="row g-3" style="background-color: aqua;"></div>
+<% allPlayers.forEach((player)=>{ %>
+
+    
+        <a href="player/<%= player._id %> "><div class="col-sm-4 text-center p-4">
+            <h3><%= player.name %> </h3>
+    
+            <img width="80%" src="<%= player.coverImagePath %> " alt="">
+        </div></a>
+    
+
+<% }) %>
+</div> 
+</div>

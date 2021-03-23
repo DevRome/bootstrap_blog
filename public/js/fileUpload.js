@@ -1,3 +1,5 @@
+// File di configurazione di FilePond
+
 FilePond.registerPlugin(
     FilePondPluginImagePreview,
     FilePondPluginImageResize,

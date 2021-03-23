@@ -1,0 +1,31 @@
+<h2 class="text-center mt-5">Admin Dashboard</h2>
+
+<div class="container justify-content-center">
+    <table class="table table-sm align-middle table-striped table-hover">
+        <thead class="table-dark">
+            <colgroup>
+                <col class="col-title">
+                <col class="col-creation-date">
+                <col span="3" class="action">
+            </colgroup>
+            <tr>
+                <th>title</th>
+                <th>creation date</th>
+                <th colspan="3" class="text-center" >actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% allPlayers.forEach((player)=>{ %>
+            <tr>
+                <td><%= player.name %></td>
+                <td><%= player.createdAt.toDateString() %></td>
+                <td><a class="btn btn-primary" href="/players/player/<%= player._id %>">read</a></td>
+                <td><a class="btn btn-primary" href="/admin/edit/<%= player._id %>">edit</a></td>
+                <td><form method="POST" action="/admin/delete/<%= player._id %>?_method=DELETE"><button class="btn btn-danger" type="submit">delete</button></form></td>
+            </tr>
+            <% }) %> 
+        </tbody>
+
+    </table>
+</div>

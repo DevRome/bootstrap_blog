@@ -37,6 +37,10 @@ const playerSchema = new mongoose.Schema({
     coverImageType: {
         type: String,
         required: true
+    }, 
+    content:{
+        type: String,
+        required: false
     }
 })
 

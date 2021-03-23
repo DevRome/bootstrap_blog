@@ -20,12 +20,14 @@
                 <p>Date born: <span><%= player.dateBorn.toDateString() %> </span></p>
             </div>
             <div class="row">
-                <p>Date death: <span><%= player.dateDeath.toDateString() %> </span></p>
+                <p>Date death: <span><%= player.dateDeath == null ? "" : player.dateDeath.toDateString() %> </span></p> <%# visualizza solo se c'è %> 
             </div>
             <div class="row">
                 <p>Country: <span><%= player.country %> </span></p>
             </div>
         </div>
     </div>
-    
+    <div class="row">
+        <p>Content: <span><%- player.content %> </span></p>
+    </div>
 </div>
